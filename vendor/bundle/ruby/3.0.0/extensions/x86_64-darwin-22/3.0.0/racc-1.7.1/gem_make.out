@@ -1,0 +1,20 @@
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+/Users/kidoreon/.rbenv/versions/3.0.6/bin/ruby extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-pzfovq sitelibdir\=./.gem.20230926-23369-pzfovq clean
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-pzfovq sitelibdir\=./.gem.20230926-23369-pzfovq
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-pzfovq sitelibdir\=./.gem.20230926-23369-pzfovq install
+/usr/local/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20230926-23369-pzfovq/racc
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-pzfovq sitelibdir\=./.gem.20230926-23369-pzfovq clean

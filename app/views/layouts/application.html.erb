@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Musictwitter</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+  <h1>musictwitter</h1>
+  <div class="header-list">
+   <ul>
+    <% if user_signed_in? %>
+     <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+     <%= link_to "アーティスト投稿", new_music_path %>
+  <%= link_to "アーティスト曲投稿",  new_song_path %>
+  <%= link_to "アイドル", musics_idol_path %>
+  <%= link_to "邦ロック",  musics_japaneserock_path %>
+  <%= link_to "洋ロック",  musics_westernrock_path %>
+  <%= link_to "アニメ",  musics_anime_path %>
+  <%= link_to "J-POP",  musics_jpop_path %>
+  <%= link_to "K-POP",  musics_kpop_path %>
+  <%= link_to "カレンダー",  blogs_path %>
+    <% else %>
+     <li><%= link_to "新規登録", new_user_registration_path %></li>
+     <li><%= link_to "ログイン", new_user_session_path %></li>
+    <% end %>
+   </ul>
+  </div>
+ </header>
+ <main>
+    <%= yield %>
+    </main>
+  </body>
+</html>

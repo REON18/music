@@ -1,0 +1,12 @@
+<h1>musictwitter</h1>
+<h3>一覧ページ</h3>
+<%= link_to "新規投稿へ", new_music_path %>
+<div class="musics-container">
+  <% @musics.each do |t| %>
+    <div class="music">
+      <%= t.music %>
+      <%= t.hand %>
+      <%= t.note %>
+    </div>
+  <% end %>
+</div>

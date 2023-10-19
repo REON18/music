@@ -1,0 +1,18 @@
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/kidoreon/.rbenv/versions/3.0.6/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-5e93pp sitelibdir\=./.gem.20230926-23369-5e93pp clean
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-5e93pp sitelibdir\=./.gem.20230926-23369-5e93pp
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-5e93pp sitelibdir\=./.gem.20230926-23369-5e93pp install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20230926-23369-5e93pp/bootsnap
+
+current directory: /Users/kidoreon/Desktop/musictwitter/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230926-23369-5e93pp sitelibdir\=./.gem.20230926-23369-5e93pp clean
