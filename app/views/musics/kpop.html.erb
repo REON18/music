@@ -12,8 +12,8 @@
 
 <% @musics.each do |t| %>
   <% if t.category == "kpop" %> 
+  <p>アーティスト名:<%= t.content %></p>
    <%= image_tag t.image_url, size: "250x200" if t.image? %> 
-    <p>アーティスト名:<%= t.content %></p>
     <%= link_to "曲名一覧ページへ", artist_songs_path(id: t.id) %>
      <%= button_to "削除する", music_path(t.id), method: :delete %>
      

@@ -1,3 +1,29 @@
 // Place all the styles related to the musics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.musicscontent { 
+    text-align: center;
+}
+
+.musics-container {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .music-box {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+.music_review {
+    text-align: center;
+    justify-content: center;
+    gap: 130px ;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+}
+
+

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
-
+  get 'losts/:songs_id/likes' => 'likes#create'
+  get 'losts/:songs_id/likes/:id' => 'likes#destroy'
   get 'musics/idol' => 'musics#idol'
   get 'musics/westernrock' => 'musics#westernrock'
   get 'musics/japaneserock' => 'musics#japaneserock'
