@@ -108,10 +108,32 @@ class MusicsController < ApplicationController
 
 
   def destroy
-      music = Music.find(params[:id])
-      music.destroy
-      redirect_to action: :idol
+    music = Music.find(params[:id])
+    category = music.category 
+  
+    music.destroy
+  
+    case category
+    when "idol"
+      redirect_to musics_idol_path
+    when "japaneserock"
+      redirect_to musics_japaneserock_path
+    when "anime"
+      redirect_to musics_anime_path
+    when "kpop"
+      redirect_to musics_kpop_path
+    when "jpop"
+      redirect_to musics_jpop_path
+    else
+      redirect_to musics_westernrock_path
+    end
   end
+  
+  
+  
+  
+  
+  
 
 
   def artist_songs

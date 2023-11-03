@@ -17,5 +17,10 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "babel-loader": "^8.2.2",
     "webpack-dev-server": "^3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "prd": "webpack --mode production"
   }
 }
