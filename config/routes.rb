@@ -21,6 +21,6 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
   end
   resources :blogs
-  root 'musics#index'
+  root 'musics#japaneserock'
 
 end

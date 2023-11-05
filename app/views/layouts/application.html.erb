@@ -19,15 +19,15 @@
       <ul class="pt-5">
           <% if user_signed_in? %>
             <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li> 
-            <li> <%= link_to "アーティスト投稿", new_music_path %> <li>
-            <li><%= link_to "アーティスト曲投稿",  new_song_path %> <li>
-            <li><%= link_to "アイドル", musics_idol_path %> <li>
-            <li> <%= link_to "邦ロック",  musics_japaneserock_path %><li>
-            <li><%= link_to "洋ロック",  musics_westernrock_path %><li>
-            <li><%= link_to "アニメ",  musics_anime_path %><li>
+            <li> <%= link_to "Artist Post", new_music_path %> <li>
+            <li><%= link_to "Artist Song  Post",  new_song_path %> <li>
+            <li><%= link_to "Idol", musics_idol_path %> <li>
+            <li> <%= link_to "JapaneseRock",  musics_japaneserock_path %><li>
+            <li><%= link_to "WesternRock",  musics_westernrock_path %><li>
+            <li><%= link_to "Anime",  musics_anime_path %><li>
             <li><%= link_to "J-POP",  musics_jpop_path %><li>
             <li><%= link_to "K-POP",  musics_kpop_path %><li>
-            <li><%= link_to "カレンダー",  blogs_path %><li>
+            <li><%= link_to "Calendar",  blogs_path %><li>
           <% else %>
             <li><%= link_to "新規登録", new_user_registration_path %></li>
             <li><%= link_to "ログイン", new_user_session_path %></li>

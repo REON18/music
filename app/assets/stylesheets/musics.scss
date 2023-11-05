@@ -4,6 +4,7 @@
 
 .musicscontent { 
     text-align: center;
+    padding-top: 40px;
 }
 
 .musics-container {
@@ -26,4 +27,9 @@
     padding: 20px;
 }
 
-
+.rounded-image {
+    border-radius: 10%; /* 50%に設定すると画像が丸くなります。好みに応じて調整できます。 */
+}
+  
+  
+  

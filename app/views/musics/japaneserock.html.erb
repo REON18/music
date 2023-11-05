@@ -5,9 +5,11 @@
     <%= text_field_tag :search %>
     <%= submit_tag '検索する'  %>
   <% end %>
-  <% if user_signed_in? %>
-    <%= link_to "マイページへ", user_path(current_user.id) %>
-  <% end %>
+  <div class="musicscontent">
+    <% if user_signed_in? %>
+      <%= link_to "マイページへ", user_path(current_user.id) %>
+    <% end %>
+  </div>
 </div>
 
 <div class="musics-container">
@@ -16,7 +18,7 @@
       <div class="music_review">
           <% if t.category == "japaneserock" %>  
           <%= link_to artist_songs_path(id: t.id) do %>
-            <%= image_tag t.image_url, size: "380x320" if t.image? %>
+            <%= image_tag t.image_url, size: "380x320", class: "rounded-image" if t.image? %>
           <% end %>
           <p><%= t.content %></p>
           <%= button_to "削除する", music_path(t.id), method: :delete %>
